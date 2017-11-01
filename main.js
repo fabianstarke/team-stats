@@ -35,5 +35,12 @@ const team = {
       lastname: lastname,
       age: age
     };
+    this.players.push(player);
   }
 };
+
+team.addPlayer("Paul", "Pogba", 24);
+team.addPlayer("Lucas", "Modric", 24);
+team.addPlayer("Arturo", "Vidal", 26);
+
+console.log(team._players)
