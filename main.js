@@ -36,6 +36,15 @@ const team = {
       age: age
     };
     this.players.push(player);
+  },
+
+  addGame(opponent, teamPoints, opponentPoints){
+    let game = {
+      opponent: opponent,
+      teamPoints: teamPoints,
+      opponentPoints: opponentPoints,
+    };
+    this.games.push(game);
   }
 };
 
@@ -43,4 +52,9 @@ team.addPlayer("Paul", "Pogba", 24);
 team.addPlayer("Lucas", "Modric", 24);
 team.addPlayer("Arturo", "Vidal", 26);
 
+team.addGame("Bordeaux", 2, 0);
+team.addGame("Strasbourg", 3, 3);
+team.addGame("Lille", 1, 0);
+
 console.log(team._players)
+console.log(team._games)
